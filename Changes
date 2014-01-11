@@ -1,5 +1,8 @@
 Revision history for App-Nopaste-Service-PastebinCa
 
+1.002   2014-01-08
+        - Fixed a require() typo that required a wrong module.
+
 1.001   2014-01-07
         - First version, released on an unsuspecting world.
 

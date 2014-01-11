@@ -5,7 +5,7 @@ use strict;
 use warnings FATAL => 'all';
 use base 'App::Nopaste::Service';
 
-our $VERSION = '1.001';
+our $VERSION = '1.002';
 
 sub available {
     eval 'require WWW::Pastebin::PastebinCa::Create;';
@@ -14,7 +14,7 @@ sub run {
     my $self = shift;
     my %args = @_;
 
-    require WWW::Pastebin::PastebinCom::Create;
+    require WWW::Pastebin::PastebinCa::Create;
 
     $args{name} = delete $args{nick} if defined $args{nick};
 
