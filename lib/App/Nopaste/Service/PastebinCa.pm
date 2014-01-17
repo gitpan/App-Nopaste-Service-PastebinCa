@@ -5,10 +5,10 @@ use strict;
 use warnings FATAL => 'all';
 use base 'App::Nopaste::Service';
 
-our $VERSION = '1.002';
+our $VERSION = '1.003';
 
 sub available {
-    eval 'require WWW::Pastebin::PastebinCa::Create;';
+    eval 'require WWW::Pastebin::PastebinCa::Create; 1';
 }
 sub run {
     my $self = shift;
