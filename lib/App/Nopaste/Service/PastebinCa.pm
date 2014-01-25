@@ -5,7 +5,7 @@ use strict;
 use warnings FATAL => 'all';
 use base 'App::Nopaste::Service';
 
-our $VERSION = '1.003';
+our $VERSION = '1.004';
 
 sub available {
     eval 'require WWW::Pastebin::PastebinCa::Create; 1';
